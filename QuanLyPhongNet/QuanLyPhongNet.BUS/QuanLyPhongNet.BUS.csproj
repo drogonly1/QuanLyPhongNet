@@ -51,6 +51,7 @@
     <Compile Include="NetRoomReader.cs" />
     <Compile Include="NetRoomWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerHandle.cs" />
     <Compile Include="ServerManager.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

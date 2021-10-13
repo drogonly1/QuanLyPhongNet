@@ -18,6 +18,7 @@ namespace QuanLyPhongNet.BUS
     {
         IPEndPoint iP;
         Socket socketServer;
+        NetRoomWriter netRoomWriter;
         public List<InfoClient> arrClient;
         const int portCode = 9999;
         const int maxGetByte = 1024 * 5000;
@@ -27,7 +28,8 @@ namespace QuanLyPhongNet.BUS
         const string wait = "WAITING";
         const string USING = "USING";
         public TimeSpan totalTime;
-
+        private static ServerManager instance;
+        
         public ServerManager()
         {
             arrClient = new List<InfoClient>();
@@ -67,7 +69,6 @@ namespace QuanLyPhongNet.BUS
                     byte[] messegeFromClient = new byte[1024 * 5000];
                     currentClient.Receive(messegeFromClient);
                     string messege = (string)CovertToMessege(messegeFromClient);
-                    MessageBox.Show(messege);
                     List<string> lstMessege = messege.Split('|').ToList();
                     if (lstMessege[request].Equals("ConnectWithMePls!!"))
                     {
@@ -101,9 +102,7 @@ namespace QuanLyPhongNet.BUS
                     }
                     else if (lstMessege[request].Equals("AllowToLogInPls!!"))
                     {
-                        //1 , gio da no choi
-                        //2 ten  user
-                        // xuong sql cap nhat gio choi lai
+
                     }
                 }
 
@@ -153,7 +152,82 @@ namespace QuanLyPhongNet.BUS
             return false;
         }
 
+        public void ChangeStateClient(Socket client, string state, string userName)
+        {
+            foreach (InfoClient cli in arrClient)
+            {
+                if (cli.client == client)
+                {
+                    cli.stateClient = state;
+                    cli.nameCustomer = userName;
+                }
+            }
+        }
 
+
+        //guess Manager
+        public InfoClient GetInfoClient(string nameClient, string statut)
+        {
+            foreach(InfoClient infoClient in arrClient)
+            {
+                if (infoClient.nameClient.Equals(nameClient) && infoClient.stateClient.Equals(statut))
+                    return infoClient;
+            }
+            return null;
+        }
+
+        public bool loginWithGuess(string nameGuess)
+        {
+            InfoClient infoClient = GetInfoClient(nameGuess, wait);
+            if (infoClient == null)
+                return false;
+            else
+            {
+                try
+                {
+                    infoClient.client.Send(ConvertToByte("GuessLogin!!!"));
+                    infoClient.startTime = DateTime.Now;
+                    infoClient.stateClient = USING;
+                    return true;
+                }
+                catch { return false; }
+            }
+        }
+        public float guessPayment(string nameClient)
+        {
+            try
+            {
+                float total = 0;
+                int priceforminute = 50;
+                string useTime;
+                InfoClient infoClient = GetInfoClient(nameClient, USING);
+                infoClient.stateClient = "WAITING";
+                if (infoClient == null)
+                return 0;
+                infoClient.client.Send(ConvertToByte("PAYMENT"));
+                
+                useTime = DateTime.Now.Subtract(infoClient.startTime).ToString();
+                int useMinute = ChangeUseTimeToMinutes(useTime);
+                if(useMinute < 21)
+                    total = 2000;
+                else
+                    total = total + useMinute * priceforminute;
+                return total;
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+        public void LockClient(int index)
+        {
+            InfoClient client = arrClient[index];
+            client.stateClient = "WAITING";
+            client.client.Send(ConvertToByte("LockClient"));
+        }
+
+
+        //Chuyển đổi
         private int ChangeUseTimeToMinutes(String useTime)
         {
             int minutes = 0;
@@ -168,44 +242,8 @@ namespace QuanLyPhongNet.BUS
             }
             return minutes;
         }
-        public float TotalPrice(int index)
-        {
-            InfoClient client = arrClient[index];
-            if (client.stateClient == "MEMBER USING")
-            {
-                return 0;
-            }
-            TimeSpan time = DateTime.Now.Subtract(client.startTime);
-            client.stateClient = "WAITING";
-            client.client.Send(ConvertToByte("PAYMENT"));
-            float total = 0;
-            string useTime = time.ToString();
-            float priceperminutes = 100;
-            int minutes = ChangeUseTimeToMinutes(useTime);
-            if (minutes == 0 || minutes < 20)
-                return 2000;
-            total = total + minutes * priceperminutes;
-            return total;
-        }
-        public void LockClient(int index)
-        {
-            InfoClient client = arrClient[index];
-            client.stateClient = "WAITING";
-            client.client.Send(ConvertToByte("LockClient!"));
-        }
 
-
-        public void ChangeStateClient(Socket client, string state, string userName)
-        {
-            foreach (InfoClient cli in arrClient)
-            {
-                if (cli.client == client)
-                {
-                    cli.stateClient = state;
-                    cli.nameCustomer = userName;
-                }
-            }
-        }
+        //ConvertToByte && CovertToMessege
         byte[] ConvertToByte(object obj)
         {
             MemoryStream memoryStream = new MemoryStream();
@@ -219,54 +257,10 @@ namespace QuanLyPhongNet.BUS
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             return binaryFormatter.Deserialize(memoryStream);
         }
-
-        public InfoClient GetInfoClient(string nameClient, string contraint)
+        public List<Member> lstmembers()
         {
-            foreach (InfoClient infoClient in arrClient)
-            {
-                if (infoClient.nameClient.Equals(nameClient) && infoClient.stateClient.Equals(contraint))
-                {
-                    return infoClient;
-                }
-
-            }
-            return null;
-        }
-
-        public bool UsingWithGuess(string nameClient)
-        {
-            InfoClient currentClient = GetInfoClient(nameClient, wait);
-            if (currentClient == null)
-                return false;
-            try
-            {
-                currentClient.client.Send(ConvertToByte("UseClient"));
-                currentClient.stateClient = USING;
-                currentClient.startTime = DateTime.Now;
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public bool PaymentNetFee(string nameClient)
-        {
-            InfoClient currentClient = GetInfoClient(nameClient, USING);
-            if (currentClient == null)
-                return false;
-            try
-            {
-                currentClient.client.Send(ConvertToByte("Payment"));
-                currentClient.stateClient = wait;
-                currentClient.startTime = new DateTime();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            List<Member> lstMember = new NetRoomReader().GetAllMembers();
+            return lstMember;
         }
     }
 }

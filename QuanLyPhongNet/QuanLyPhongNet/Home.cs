@@ -16,6 +16,7 @@ namespace QuanLyPhongNet
         ServerManager serverManager;
         private NetRoomReader objReader;
         private NetRoomWriter objWriter;
+        private int index = 0;
         public Home()
         {
             serverManager = new ServerManager();
@@ -46,7 +47,6 @@ namespace QuanLyPhongNet
 
         public void LoadClient()
         {
-
             drgvClient.DataSource = (from client in serverManager.arrClient select new { ComputerName = client.nameClient, State = client.stateClient, StartTime = client.startTime }).ToArray();
         }
 
@@ -71,5 +71,69 @@ namespace QuanLyPhongNet
             }
             LoadClient();
         }
+
+        private void drgvClient_MouseHover(object sender, EventArgs e)
+        {
+            if (ServerManager.refreshClient != serverManager.arrClient.Count)
+            {
+
+                ServerManager.refreshClient = serverManager.arrClient.Count;
+                LoadClient();
+            }
+            LoadClient();
+        }
+
+        private void drgvMember_MouseHover(object sender, EventArgs e)
+        {
+           drgvMember.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            serverManager.loginWithGuess(serverManager.arrClient[index].nameClient);
+            LoadClient();
+            index = 0;
+        }
+
+        private void drgvClient_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                index = drgvClient.Rows[e.RowIndex].Index;
+            }
+            catch (Exception) {}
+        }
+        //Tính Tiền
+        private void button2_Click(object sender, EventArgs e)
+        {
+            float total = serverManager.guessPayment(serverManager.arrClient[index].nameClient);
+            MessageBox.Show("Tên máy: "+ serverManager.arrClient[index].nameClient
+                            +"\n"+
+                            "Tiền: " + total,
+                            "Thanh Toán");
+            LoadClient();
+            index = 0;
+        }
+        //Tắt máy
+        private void button4_Click(object sender, EventArgs e)
+        {
+            serverManager.LockClient(index);
+            LoadClient();
+            index = 0;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            serverManager.LockClient(index);
+            LoadClient();
+            index = 0;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddMember frAddMember = new AddMember();
+            frAddMember.ShowDialog();
+        }
+        
     }
 }

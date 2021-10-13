@@ -10,6 +10,16 @@
 
     public class NetRoomWriter
     {
+        private static NetRoomWriter instance;
+        public static NetRoomWriter Intance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new NetRoomWriter();
+                return instance;
+            }
+        }
         private ProcessMember memberObjectWriter;
 
         public NetRoomWriter()

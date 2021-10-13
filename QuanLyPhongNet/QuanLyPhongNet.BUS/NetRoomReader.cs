@@ -11,6 +11,16 @@
     {
         private ProcessMember memberObjectReader;
         private ProcessClient clientObjectReader;
+        private static NetRoomReader instance;
+        public static NetRoomReader Intance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new NetRoomReader();
+                return instance;
+            }
+        }
         public NetRoomReader()
         {
             memberObjectReader = new ProcessMember();
