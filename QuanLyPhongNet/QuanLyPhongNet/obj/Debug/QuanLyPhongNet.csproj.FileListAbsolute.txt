@@ -19,3 +19,4 @@ D:\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll
 D:\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.pdb
 D:\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll.config
 D:\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.AddMember.resources
+D:\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.EditMember.resources

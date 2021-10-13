@@ -124,7 +124,7 @@ namespace QuanLyPhongNet.BUS
                 if (m.AccountName.Equals(userName))
                 {
                     float money = m.CurrentMoney - ChangeUseTimeToMinutes(remainTime.ToString()) * 100;
-                    new NetRoomWriter().UpdateMember(1, m.AccountName, m.Password, m.GroupUserName, remainTime, money, m.Status);
+                    new NetRoomWriter().UpdateMember(m.AccountName, m.Password, m.GroupUserName, remainTime, money, m.Status);
                 }
             }
         }
@@ -242,7 +242,22 @@ namespace QuanLyPhongNet.BUS
             }
             return minutes;
         }
-
+        //Xử lý với Db
+        public void deleteMember(string username)
+        {
+            try
+            {
+                List<Member> lstMember = new NetRoomReader().GetAllMembers();
+                foreach (Member member in lstMember)
+                {
+                    if (member.AccountName.ToUpper() == username.ToUpper())
+                        NetRoomWriter.Intance.DeleteMember(username);
+                }
+                MessageBox.Show("Account: " + username + "đã được xóa!!!");
+            }
+            catch { return; }
+            
+        }
         //ConvertToByte && CovertToMessege
         byte[] ConvertToByte(object obj)
         {
@@ -256,11 +271,6 @@ namespace QuanLyPhongNet.BUS
             MemoryStream memoryStream = new MemoryStream(messege);
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             return binaryFormatter.Deserialize(memoryStream);
-        }
-        public List<Member> lstmembers()
-        {
-            List<Member> lstMember = new NetRoomReader().GetAllMembers();
-            return lstMember;
         }
     }
 }

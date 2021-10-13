@@ -48,12 +48,12 @@
             }
         }
 
-        public void UpdateMember(int memberID, string account, string pass, string groupUser, TimeSpan time, float money, string status)
+        public void UpdateMember(string account, string pass, string groupUser, TimeSpan time, float money, string status)
         {
             using (QuanLyPhongNETDataContext objWriter = new QuanLyPhongNETDataContext())
             {
                 Member objUpdate;
-                objUpdate = objWriter.Members.FirstOrDefault(x => x.MemberID == memberID);
+                objUpdate = objWriter.Members.FirstOrDefault(x => x.AccountName == account);
                 objUpdate.AccountName = account;
                 objUpdate.Password = pass;
                 objUpdate.GroupUser = groupUser;
@@ -64,11 +64,11 @@
             }
         }
 
-        public void DeleteMember(int memberID)
+        public void DeleteMember(string username)
         {
             using (QuanLyPhongNETDataContext objWriter = new QuanLyPhongNETDataContext())
             {
-                var objDelete = objWriter.Members.Single(x => x.MemberID == memberID);
+                var objDelete = objWriter.Members.Single(x => x.AccountName == username);
                 objWriter.Members.DeleteOnSubmit(objDelete);
                 objWriter.SubmitChanges();
             }

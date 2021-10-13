@@ -18,6 +18,11 @@ namespace QuanLyPhongNet.BUS
     {
         NetRoomReader netRoomReader = new NetRoomReader();
         NetRoomWriter netRoomWriter;
+        public string acn = "";
+        public string pw = "";
+        public string gro = "";
+        TimeSpan tm;
+        public float mn = 0;
         private static ServerHandle instance;
         public static ServerHandle Intance
         {
@@ -36,7 +41,6 @@ namespace QuanLyPhongNet.BUS
             {
                 if (m.AccountName.ToUpper() == username.ToUpper())
                 {
-
                     compare = 0;
                 }
             }
@@ -49,13 +53,53 @@ namespace QuanLyPhongNet.BUS
             else
             {
                 NetRoomWriter.Intance.InsertMember(username, password, "Hội Viên", ChangeMoneyToTime(float.Parse(money)), float.Parse(money), "Cho Phép");
-                MessageBox.Show("thêm tài khoản thành công!!!", "thông báo");
+                MessageBox.Show("thêm tài khoản thành công\nVui lòng nhấn tải lại để cập nhập.", "thông báo");
+            }
+        }
+        public void updateMember(string username, string password, string groupuser,string money)
+        {
+            List<DTO.Member> lstMember = netRoomReader.GetAllMembers();
+            foreach (DTO.Member m in lstMember)
+            {
+                if (m.AccountName.ToUpper() == username.ToUpper() && float.Parse(money) > 0)
+                {
+                    NetRoomWriter.Intance.UpdateMember(username, password, groupuser, ChangeMoneyToTime(float.Parse(money)), float.Parse(money), "Cho Phép");
+                }
+                if (m.AccountName.ToUpper() == username.ToUpper() && float.Parse(money) <= 0)
+                {
+                    NetRoomWriter.Intance.UpdateMember(username, password, groupuser, ChangeMoneyToTime(float.Parse(money)), float.Parse(money), "Hết Thời Gian");
+                }
+            }
+            MessageBox.Show("Cập nhật tài khoản thành công\nVui lòng nhấn tải lại để cập nhập.");
+        }
+
+        //
+        public void sendMember(string accout)
+        {
+            List<Member> lstMember = NetRoomReader.Intance.GetAllMembers();
+            foreach(Member member in lstMember)
+            {
+                if(member.AccountName.ToUpper() == accout.ToUpper())
+                {
+                    acn = member.AccountName;
+                    gro = member.GroupUserName;
+                    pw = member.Password;
+                    mn = member.CurrentMoney;
+                }
             }
         }
         //Change money to time
         public TimeSpan ChangeMoneyToTime(float money)
         {
-            
+            if(money == 0)
+            {
+                TimeSpan time1;
+                string span1 = "00:00:00";
+                time1 = new TimeSpan(int.Parse(span1.Split(':')[0]),    // hours
+                                            int.Parse(span1.Split(':')[1]),    // minutes
+                                            0); ;                             // seconds
+                return time1;
+            }
             TimeSpan time;
             int hour = 0;
             int minutes = (int)money / 50;

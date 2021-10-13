@@ -39,13 +39,14 @@ namespace QuanLyPhongNet
             this.button1 = new System.Windows.Forms.Button();
             this.drgvClient = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.drgvMember = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timerProgam = new System.Windows.Forms.Timer(this.components);
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDel = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnrefesh = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drgvClient)).BeginInit();
@@ -152,6 +153,7 @@ namespace QuanLyPhongNet
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnrefesh);
             this.tabPage2.Controls.Add(this.btnEdit);
             this.tabPage2.Controls.Add(this.btnDel);
             this.tabPage2.Controls.Add(this.btnAdd);
@@ -165,6 +167,36 @@ namespace QuanLyPhongNet
             this.tabPage2.Text = "Tài Khoản";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(269, 15);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(93, 50);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(150, 15);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(93, 50);
+            this.btnDel.TabIndex = 1;
+            this.btnDel.Text = "Xóa";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(26, 15);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(93, 50);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // drgvMember
             // 
             this.drgvMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -174,6 +206,7 @@ namespace QuanLyPhongNet
             this.drgvMember.RowTemplate.Height = 24;
             this.drgvMember.Size = new System.Drawing.Size(991, 405);
             this.drgvMember.TabIndex = 0;
+            this.drgvMember.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.drgvMember_CellClick);
             this.drgvMember.MouseHover += new System.EventHandler(this.drgvMember_MouseHover);
             // 
             // tabPage3
@@ -199,33 +232,15 @@ namespace QuanLyPhongNet
             this.timerProgam.Interval = 1000;
             this.timerProgam.Tick += new System.EventHandler(this.timerProgam_Tick);
             // 
-            // btnAdd
+            // btnrefesh
             // 
-            this.btnAdd.Location = new System.Drawing.Point(26, 15);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(93, 50);
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.Location = new System.Drawing.Point(150, 15);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(93, 50);
-            this.btnDel.TabIndex = 1;
-            this.btnDel.Text = "Xóa";
-            this.btnDel.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(269, 15);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(93, 50);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnrefesh.Location = new System.Drawing.Point(856, 15);
+            this.btnrefesh.Name = "btnrefesh";
+            this.btnrefesh.Size = new System.Drawing.Size(93, 50);
+            this.btnrefesh.TabIndex = 1;
+            this.btnrefesh.Text = "Tải lại";
+            this.btnrefesh.UseVisualStyleBackColor = true;
+            this.btnrefesh.Click += new System.EventHandler(this.btnrefesh_Click);
             // 
             // Home
             // 
@@ -263,6 +278,7 @@ namespace QuanLyPhongNet
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnrefesh;
     }
 }
 

@@ -31,9 +31,13 @@
         {
             memberObjectWriter.InsertMember(account, pass, groupUser, time, money, status);
         }
-        public void UpdateMember(int memberID, string account, string pass, string groupUser, TimeSpan time, float money, string status)
+        public void UpdateMember(string account, string pass, string groupUser, TimeSpan time, float money, string status)
         {
-            memberObjectWriter.UpdateMember(memberID, account, pass, groupUser, time, money, status);
+            memberObjectWriter.UpdateMember(account, pass, groupUser, time, money, status);
+        }
+        public void DeleteMember(string username)
+        {
+            memberObjectWriter.DeleteMember(username);
         }
     }
 }

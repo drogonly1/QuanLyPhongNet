@@ -27,7 +27,6 @@ namespace QuanLyPhongNet
 
         private void txtMoney_TextChanged(object sender, EventArgs e)
         {
-
             if (txtMoney.Text == null || txtMoney.Text == "")
             {
                 txtTime.Text = "00:00:00";
@@ -45,7 +44,6 @@ namespace QuanLyPhongNet
         private void AddMember_Load(object sender, EventArgs e)
         {
             txtTime.Text = "00:00:00";
-            txtTime.Select();
         }
     }
 }

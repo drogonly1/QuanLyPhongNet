@@ -46,7 +46,7 @@ namespace QuanLyPhongNet
             this.button1.Location = new System.Drawing.Point(69, 281);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 39);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Thêm Tài Khoản";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -56,7 +56,7 @@ namespace QuanLyPhongNet
             this.button2.Location = new System.Drawing.Point(69, 326);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(214, 39);
-            this.button2.TabIndex = 0;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -102,7 +102,7 @@ namespace QuanLyPhongNet
             this.txtName.Location = new System.Drawing.Point(129, 39);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(165, 22);
-            this.txtName.TabIndex = 2;
+            this.txtName.TabIndex = 1;
             // 
             // txtPass
             // 
@@ -116,15 +116,17 @@ namespace QuanLyPhongNet
             this.txtMoney.Location = new System.Drawing.Point(89, 154);
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(205, 22);
-            this.txtMoney.TabIndex = 2;
+            this.txtMoney.TabIndex = 3;
             this.txtMoney.TextChanged += new System.EventHandler(this.txtMoney_TextChanged);
             // 
             // txtTime
             // 
+            this.txtTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTime.Location = new System.Drawing.Point(89, 193);
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(205, 22);
-            this.txtTime.TabIndex = 2;
+            this.txtTime.ReadOnly = true;
+            this.txtTime.Size = new System.Drawing.Size(205, 15);
+            this.txtTime.TabIndex = 99;
             // 
             // AddMember
             // 
