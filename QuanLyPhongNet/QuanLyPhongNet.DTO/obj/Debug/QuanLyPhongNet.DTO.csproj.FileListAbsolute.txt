@@ -1,0 +1,9 @@
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.pdb
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.Properties.Resources.resources
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.GenerateResource.cache
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.CoreCompileInputs.cache
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.pdb
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll.config
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.dll
+D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.AssemblyReference.cache

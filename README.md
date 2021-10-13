@@ -1,2 +1,0 @@
-# QuanLyPhongNet
-OK mà
