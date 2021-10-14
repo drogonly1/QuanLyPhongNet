@@ -1,7 +1,7 @@
 ﻿
 namespace Client
 {
-    partial class Form1
+    partial class Timing
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Client
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblUserName = new System.Windows.Forms.Label();
             this.txtServiceFee = new System.Windows.Forms.TextBox();
             this.txtUseTimeFee = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@ namespace Client
             this.lblUseTime = new System.Windows.Forms.Label();
             this.lblTotalTime = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.timerProgram = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,15 +182,21 @@ namespace Client
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
-            // Form1
+            // timerProgram
+            // 
+            this.timerProgram.Tick += new System.EventHandler(this.timerProgram_Tick);
+            // 
+            // Timing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 598);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Timing";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Timing_FormClosing);
+            this.Load += new System.EventHandler(this.Timing_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,6 +218,7 @@ namespace Client
         private System.Windows.Forms.Label lblUseTime;
         private System.Windows.Forms.Label lblTotalTime;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Timer timerProgram;
     }
 }
 

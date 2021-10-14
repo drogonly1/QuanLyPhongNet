@@ -47,26 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientLogin.Designer.cs">
-      <DependentUpon>ClientLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClientManager.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timing.Designer.cs">
+      <DependentUpon>Timing.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ClientLogin.resx">
-      <DependentUpon>ClientLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Timing.resx">
+      <DependentUpon>Timing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

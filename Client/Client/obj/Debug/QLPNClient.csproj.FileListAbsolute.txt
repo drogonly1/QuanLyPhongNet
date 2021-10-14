@@ -1,0 +1,11 @@
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe.config
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\bin\Debug\Client.pdb
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.Client.resources
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.Timing.resources
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.GenerateResource.cache
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.CoreCompileInputs.cache
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.exe
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.pdb
+D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.AssemblyReference.cache

@@ -6,47 +6,130 @@ using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Client
 {
-    class ClientManager
-    {
-        IPEndPoint iP;
-        public Socket client;
-        int portCode = 9999;
-        const int maxGetByte = 1024 * 4000;
-        public static int refreshClient = -1;
-        public const int change = -1;
-        const int request = 0;
-        public static int requestServer = -1;
-        const int USECLIENT = 101;
-        public const int MEMBERLOGIN = 102;
-        public const int PAYMENT = 103;
-        public ClientLogin lockScreen;
-        public string userName = "";
-        public string message = "";
-        public TimeSpan totalTime;
-
-        public void Login(string username, string password)
+    
+        public delegate void setInfo(string userName, string timeBalance);
+        public class ClientManager
         {
-            client.Send(ConvertToByte("LoginRepuest!!!|" + username + "|" + password + "|"));
-        }
+            IPEndPoint iP;
+            public Socket client;
+            int portCode = 9999;
+            const int maxGetByte = 1024 * 4000;
+            public static int refreshClient = -1;
+            public const int change = -1;
+            const int request = 0;
+            public static int requestServer = -1;
+            const int USECLIENT = 101;
+            public const int MEMBERLOGIN = 102;
+            public const int PAYMENT = 103;
+            public Client lockScreen;
+            public string userName = "";
+            public string message = "";
+            public TimeSpan totalTime;
 
-        public void Logout(string username, TimeSpan remainTime)
-        {
-            client.Send(ConvertToByte("LogoutRepuest!!!|" + username + "|" + remainTime.ToString() + "|"));
-        }
+            public ClientManager()
+            {
+                iP = new IPEndPoint(IPAddress.Parse("127.0.0.1"), portCode);
+                client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+                try
+                {
+                    client.Connect(iP);
+                    client.Send(ConvertToByte("ConnectWithMePls!!|" + "May-1"));
+                }
+                catch
+                {
 
-        byte[] ConvertToByte(object obj)
+                }
+
+                Thread listenSever = new Thread(ReceiveDataFromSever);
+                listenSever.IsBackground = true;
+                listenSever.Start();
+                lockScreen = new Client(this);
+                lockScreen.Show();
+            }
+
+            public void Login(string userName, string passWord)
+            {
+                client.Send(ConvertToByte("AllowToLogInPls!!|" + userName + "|" + passWord + "|"));
+            }
+
+            public void LogoutMember(string userName, TimeSpan remainTime)
+            {
+                client.Send(ConvertToByte("LogOutPls!!|" + userName + "|" + remainTime.ToString() + "|"));
+            }
+
+            public void ReceiveDataFromSever()
+            {
+
+                try
+                {
+                    while (true)
+                    {
+                        byte[] messageFromClient = new byte[maxGetByte];
+                        client.Receive(messageFromClient);
+                        string message = ConvertToMessage(messageFromClient).ToString();
+                        List<string> lstMessage = message.Split('|').ToList();
+                        message = "";
+
+                        //Guess
+                        if (lstMessage[request].Equals("GuessLogin!!!"))
+                        {
+                            userName = "Customer";
+                            requestServer = USECLIENT;
+                            lockScreen.Visible = false;
+                        }
+                        if (lstMessage[request].Equals("PAYMENT"))
+                        {
+                            lockScreen.Visible = true;
+                            requestServer = PAYMENT;
+                        }
+                        if (lstMessage[request].Equals("LockClient"))
+                        {
+                            lockScreen.Visible = true;
+                        }
+                        //Member
+                        if (lstMessage[request].Equals("OkePlayGo"))
+                        {
+                            userName = lstMessage[1];
+                            totalTime = TimeSpan.Parse(lstMessage[2]);
+                            requestServer = MEMBERLOGIN;
+                            lockScreen.Visible = false;
+                            message = "";
+                        }
+                        //Error
+                        if (lstMessage[request].Equals("Acount not exist !! Or Wrong Username, Password"))
+                        {
+                            lockScreen.Visible = true;
+                            message = "Acount not exist !! Or Wrong Username, Password";
+                            MessageBox.Show(message);
+                        }
+                        if (lstMessage[request].Equals("Your account is exhausted.Recharge to use it!!!"))
+                        {
+                            lockScreen.Visible = true;
+                            message = "Your account is exhausted.Recharge to use it!!!";
+                            MessageBox.Show(message);
+                        }
+                    }
+                }
+                catch
+                {
+
+                }
+            }
+            byte[] ConvertToByte(object obj)
         {
             MemoryStream memoryStream = new MemoryStream();
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             binaryFormatter.Serialize(memoryStream, obj);
             return memoryStream.ToArray();
         }
-        object ConvertToMesseage(byte[] message)
+        object ConvertToMessage(byte[] messege)
         {
-            MemoryStream memoryStream = new MemoryStream();
+            MemoryStream memoryStream = new MemoryStream(messege);
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             return binaryFormatter.Deserialize(memoryStream);
         }
