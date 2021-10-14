@@ -14,3 +14,19 @@ D:\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.dll.config
 D:\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll.config
 D:\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll
 D:\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.AssemblyReference.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.Properties.Resources.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.GenerateResource.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.CoreCompileInputs.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.CopyComplete
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.pdb

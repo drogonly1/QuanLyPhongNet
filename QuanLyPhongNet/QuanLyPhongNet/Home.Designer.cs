@@ -39,6 +39,7 @@ namespace QuanLyPhongNet
             this.button1 = new System.Windows.Forms.Button();
             this.drgvClient = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnrefesh = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -46,7 +47,7 @@ namespace QuanLyPhongNet
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timerProgam = new System.Windows.Forms.Timer(this.components);
-            this.btnrefesh = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drgvClient)).BeginInit();
@@ -71,6 +72,7 @@ namespace QuanLyPhongNet
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.btnRefresh);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
@@ -142,7 +144,7 @@ namespace QuanLyPhongNet
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.drgvClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.drgvClient.Location = new System.Drawing.Point(3, 83);
+            this.drgvClient.Location = new System.Drawing.Point(-6, 83);
             this.drgvClient.Name = "drgvClient";
             this.drgvClient.RowHeadersWidth = 51;
             this.drgvClient.RowTemplate.Height = 24;
@@ -166,6 +168,16 @@ namespace QuanLyPhongNet
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tài Khoản";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnrefesh
+            // 
+            this.btnrefesh.Location = new System.Drawing.Point(856, 15);
+            this.btnrefesh.Name = "btnrefesh";
+            this.btnrefesh.Size = new System.Drawing.Size(93, 50);
+            this.btnrefesh.TabIndex = 1;
+            this.btnrefesh.Text = "Tải lại";
+            this.btnrefesh.UseVisualStyleBackColor = true;
+            this.btnrefesh.Click += new System.EventHandler(this.btnrefesh_Click);
             // 
             // btnEdit
             // 
@@ -232,15 +244,15 @@ namespace QuanLyPhongNet
             this.timerProgam.Interval = 1000;
             this.timerProgam.Tick += new System.EventHandler(this.timerProgam_Tick);
             // 
-            // btnrefesh
+            // button5
             // 
-            this.btnrefesh.Location = new System.Drawing.Point(856, 15);
-            this.btnrefesh.Name = "btnrefesh";
-            this.btnrefesh.Size = new System.Drawing.Size(93, 50);
-            this.btnrefesh.TabIndex = 1;
-            this.btnrefesh.Text = "Tải lại";
-            this.btnrefesh.UseVisualStyleBackColor = true;
-            this.btnrefesh.Click += new System.EventHandler(this.btnrefesh_Click);
+            this.button5.Location = new System.Drawing.Point(590, 31);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // Home
             // 
@@ -279,6 +291,7 @@ namespace QuanLyPhongNet
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnrefesh;
+        private System.Windows.Forms.Button button5;
     }
 }
 

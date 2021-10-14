@@ -28,8 +28,9 @@ namespace QuanLyPhongNet.BUS
         const string wait = "WAITING";
         const string USING = "USING";
         public TimeSpan totalTime;
-        private static ServerManager instance;
+        public string acn = "";
         
+
         public ServerManager()
         {
             arrClient = new List<InfoClient>();
@@ -258,6 +259,39 @@ namespace QuanLyPhongNet.BUS
             catch { return; }
             
         }
+        //
+        //public InfoClient sendInfoClient(string nameClient)
+        //{
+        //    InfoClient infoClient = null;
+        //    List<InfoClient> infoClients = arrClient;
+        //    foreach (InfoClient info in infoClients)
+        //        if (info.nameClient.ToUpper() == nameClient.ToUpper())
+        //            infoClient = info;
+        //    return infoClient;
+        //}
+        public void sendInfoClient(string accout)
+        {
+            List<InfoClient> lstMember = arrClient;
+            foreach (InfoClient member in lstMember)
+            {
+                if (member.nameClient.ToUpper() == accout.ToUpper())
+                {
+                    acn = member.nameClient;
+                }
+            }
+        }
+        public void sendMessage(string accout, string message)
+        {
+            List<InfoClient> lstMember = arrClient;
+            foreach (InfoClient member in lstMember)
+            {
+                if (member.nameClient.ToUpper() == accout.ToUpper())
+                {
+                    member.client.Send(ConvertToByte("aaa"));
+                }
+            }
+        }
+
         //ConvertToByte && CovertToMessege
         byte[] ConvertToByte(object obj)
         {

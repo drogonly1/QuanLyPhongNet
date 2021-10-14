@@ -113,6 +113,7 @@ namespace QuanLyPhongNet
             try
             {
                 index = drgvClient.Rows[e.RowIndex].Index;
+                serverManager.sendInfoClient(drgvClient.Rows[e.RowIndex].Cells[0].Value.ToString());
             }
             catch (Exception) {}
         }
@@ -172,6 +173,12 @@ namespace QuanLyPhongNet
             EditMember frAddMember = new EditMember();
             frAddMember.ShowDialog();
 
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Form1 frAddMember = new Form1();
+            frAddMember.ShowDialog();
         }
     }
 }

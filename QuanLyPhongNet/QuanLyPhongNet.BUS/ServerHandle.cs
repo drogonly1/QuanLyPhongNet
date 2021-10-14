@@ -88,6 +88,7 @@ namespace QuanLyPhongNet.BUS
                 }
             }
         }
+        
         //Change money to time
         public TimeSpan ChangeMoneyToTime(float money)
         {

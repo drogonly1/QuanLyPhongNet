@@ -20,3 +20,26 @@ D:\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.pdb
 D:\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll.config
 D:\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.AddMember.resources
 D:\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.EditMember.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.exe.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.exe
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll.config
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.AssemblyReference.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.AddMember.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.EditMember.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Home.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Properties.Resources.resources
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.GenerateResource.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CoreCompileInputs.cache
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CopyComplete
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.exe
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.pdb
+D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Form1.resources
