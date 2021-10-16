@@ -23,6 +23,7 @@ namespace Client
             public const int change = -1;
             const int request = 0;
             public static int requestServer = -1;
+            public int requestmessage = 113;
             const int USECLIENT = 101;
             public const int MEMBERLOGIN = 102;
             public const int PAYMENT = 103;
@@ -30,6 +31,7 @@ namespace Client
             public string userName = "";
             public string message = "";
             public TimeSpan totalTime;
+            public string messagefrmsv = "";
 
             public ClientManager()
             {
@@ -72,6 +74,7 @@ namespace Client
                         byte[] messageFromClient = new byte[maxGetByte];
                         client.Receive(messageFromClient);
                         string message = ConvertToMessage(messageFromClient).ToString();
+                    MessageBox.Show(message);
                         List<string> lstMessage = message.Split('|').ToList();
                         message = "";
 
@@ -99,9 +102,14 @@ namespace Client
                             requestServer = MEMBERLOGIN;
                             lockScreen.Visible = false;
                             message = "";
+                         }
+                        if (lstMessage[request].Equals("messagetoclient"))
+                        {
+                            requestmessage = 114;
+                            messagefrmsv = lstMessage[1];
                         }
-                        //Error
-                        if (lstMessage[request].Equals("Acount not exist !! Or Wrong Username, Password"))
+                    //Error
+                    if (lstMessage[request].Equals("Acount not exist !! Or Wrong Username, Password"))
                         {
                             lockScreen.Visible = true;
                             message = "Acount not exist !! Or Wrong Username, Password";
@@ -119,8 +127,14 @@ namespace Client
                 {
 
                 }
-            }
-            byte[] ConvertToByte(object obj)
+        }
+
+        public void sendMessage(string mstosv)
+        {
+            client.Send(ConvertToByte("messagetosv|"+mstosv+"|"));
+        }
+
+        byte[] ConvertToByte(object obj)
         {
             MemoryStream memoryStream = new MemoryStream();
             BinaryFormatter binaryFormatter = new BinaryFormatter();

@@ -17,7 +17,6 @@ namespace QuanLyPhongNet
         private NetRoomReader objReader;
         private NetRoomWriter objWriter;
         private int index = 0;
-        private static Home instance;
         public Home()
         {
             serverManager = new ServerManager();
@@ -177,8 +176,25 @@ namespace QuanLyPhongNet
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            Form1 frAddMember = new Form1();
-            frAddMember.ShowDialog();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            string account = serverManager.acn;
+            string message = txtMessage.Text;
+            serverManager.sendMessage(account, message);
+            txtContent.Text = String.Join(Environment.NewLine, txtContent.Text, "Server: " + txtMessage.Text);
+            txtMessage.Text = "";
+        }
+
+        private void timerContent_Tick(object sender, EventArgs e)
+        {
+            if (serverManager.requestmessage == 114)
+            {
+                txtContent.Text = String.Join(Environment.NewLine, txtContent.Text, "Client: " + serverManager.messagefrClient);
+                serverManager.requestmessage = 113;
+            }
+           
         }
     }
 }

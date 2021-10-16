@@ -25,6 +25,7 @@ namespace Client
         TimeSpan use;
         TimeSpan remain;
         string userName = "";
+        private int sendms = 0;
         public Timing()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace Client
             timerProgram.Interval = 1000;
             timerProgram.Enabled = true;
             timerProgram.Start();
-
+            panel1.Visible = false;
         }
 
         private void timerProgram_Tick(object sender, EventArgs e)
@@ -84,6 +85,12 @@ namespace Client
                 }
 
             }
+            if( clientManager.requestmessage == 114)
+            {
+                txtContent.Text = String.Join(Environment.NewLine, txtContent.Text, "Server: " + clientManager.messagefrmsv);
+                clientManager.requestmessage = 113;
+            }
+                
         }
         private void TimeCount()
         {
@@ -152,6 +159,23 @@ namespace Client
         private void Timing_FormClosing(object sender, FormClosingEventArgs e)
         {
             clientManager.LogoutMember(clientManager.userName, remain);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clientManager.sendMessage(txtMessage.Text);
+            txtContent.Text = String.Join(Environment.NewLine, txtContent.Text, "Client: " + txtMessage.Text);
+            txtMessage.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible == true)
+            {
+                panel1.Visible = false;
+            }
+            else
+                panel1.Visible = true;
         }
     }
 }

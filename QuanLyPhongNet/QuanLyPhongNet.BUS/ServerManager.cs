@@ -16,8 +16,8 @@ namespace QuanLyPhongNet.BUS
 {
     public class ServerManager
     {
-        IPEndPoint iP;
-        Socket socketServer;
+        public IPEndPoint iP;
+        public Socket socketServer;
         NetRoomWriter netRoomWriter;
         public List<InfoClient> arrClient;
         const int portCode = 9999;
@@ -28,8 +28,10 @@ namespace QuanLyPhongNet.BUS
         const string wait = "WAITING";
         const string USING = "USING";
         public TimeSpan totalTime;
+
         public string acn = "";
-        
+        public String messagefrClient ="";
+        public int requestmessage = 113;
 
         public ServerManager()
         {
@@ -101,9 +103,10 @@ namespace QuanLyPhongNet.BUS
                         UpdateRemainTime(lstMessege[1], TimeSpan.Parse(lstMessege[2]));
                         ChangeStateClient(currentClient, "WAITING", lstMessege[1]);
                     }
-                    else if (lstMessege[request].Equals("AllowToLogInPls!!"))
+                    if (lstMessege[request].Equals("messagetosv"))
                     {
-
+                        messagefrClient = lstMessege[1];
+                        requestmessage = 114;
                     }
                 }
 
@@ -287,7 +290,7 @@ namespace QuanLyPhongNet.BUS
             {
                 if (member.nameClient.ToUpper() == accout.ToUpper())
                 {
-                    member.client.Send(ConvertToByte("aaa"));
+                    member.client.Send(ConvertToByte("messagetoclient|"+message+"|"));
                 }
             }
         }

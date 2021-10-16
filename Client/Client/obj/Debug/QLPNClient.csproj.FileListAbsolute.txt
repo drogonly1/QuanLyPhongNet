@@ -9,3 +9,14 @@ D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.CoreCo
 D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.exe
 D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\Client.pdb
 D:\Đồ Án Web\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.AssemblyReference.cache
+D:\New folder (5)\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe.config
+D:\New folder (5)\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe
+D:\New folder (5)\QuanLyPhongNet\Client\Client\bin\Debug\Client.pdb
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.AssemblyReference.cache
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.Client.resources
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.Timing.resources
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.GenerateResource.cache
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.CoreCompileInputs.cache
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.exe
+D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.pdb

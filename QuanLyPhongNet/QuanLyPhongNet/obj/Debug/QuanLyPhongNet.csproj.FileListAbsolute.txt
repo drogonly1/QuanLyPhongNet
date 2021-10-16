@@ -42,4 +42,3 @@ D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyP
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CopyComplete
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.exe
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.pdb
-D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Form1.resources
