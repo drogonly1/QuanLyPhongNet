@@ -42,3 +42,26 @@ D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyP
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CopyComplete
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.exe
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.AddMember.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Chat.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.EditMember.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Home.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.Properties.Resources.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.exe.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.exe
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.BUS.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DTO.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\bin\Debug\QuanLyPhongNet.DAO.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.csproj.CopyComplete
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.exe
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet\obj\Debug\QuanLyPhongNet.pdb

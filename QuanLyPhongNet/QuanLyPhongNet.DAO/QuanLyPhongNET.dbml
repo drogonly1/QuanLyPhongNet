@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyPhongNet" Class="QuanLyPhongNETDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-05M8TQE;Initial Catalog=QuanLyPhongNet;Integrated Security=True" SettingsObjectName="QuanLyPhongNet.DAO.Properties.Settings" SettingsPropertyName="QuanLyPhongNetConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ROLLER\SQLEXPRESS;Initial Catalog=QuanLyPhongNet;Integrated Security=True" SettingsObjectName="QuanLyPhongNet.DAO.Properties.Settings" SettingsPropertyName="QuanLyPhongNetConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.AfterPayClient" Member="AfterPayClients">
     <Type Name="AfterPayClient">
       <Column Name="ClientName" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

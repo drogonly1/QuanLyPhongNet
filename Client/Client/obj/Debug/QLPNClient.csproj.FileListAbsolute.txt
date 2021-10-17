@@ -20,3 +20,15 @@ D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.Gener
 D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.CoreCompileInputs.cache
 D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.exe
 D:\New folder (5)\QuanLyPhongNet\Client\Client\obj\Debug\Client.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\bin\Debug\Client.exe
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\bin\Debug\Client.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.Chat.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.Client.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.Timing.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\QLPNClient.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.exe
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\Client\Client\obj\Debug\Client.pdb

@@ -30,3 +30,19 @@ D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\Qua
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.CopyComplete
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.dll
 D:\New folder (5)\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.BUS.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DAO.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\bin\Debug\QuanLyPhongNet.DTO.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.Properties.Resources.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.csproj.CopyComplete
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.BUS\obj\Debug\QuanLyPhongNet.BUS.pdb

@@ -7,3 +7,12 @@ D:\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll.config
 D:\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll
 D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.dll
 D:\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll.config
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\bin\Debug\QuanLyPhongNet.DTO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.Properties.Resources.resources
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.dll
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.pdb
+C:\Users\PC\Desktop\Quản Lý Quán Net\QuanLyPhongNet\QuanLyPhongNet\QuanLyPhongNet.DTO\obj\Debug\QuanLyPhongNet.DTO.csprojAssemblyReference.cache

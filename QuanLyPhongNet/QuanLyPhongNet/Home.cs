@@ -178,7 +178,7 @@ namespace QuanLyPhongNet
         {
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+       /* private void btnSend_Click(object sender, EventArgs e)
         {
             string account = serverManager.acn;
             string message = txtMessage.Text;
@@ -195,6 +195,17 @@ namespace QuanLyPhongNet
                 serverManager.requestmessage = 113;
             }
            
+        }*/
+
+        private void txtMessage_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+            Chat chat = new Chat(serverManager);
+            chat.ShowDialog();
         }
     }
 }

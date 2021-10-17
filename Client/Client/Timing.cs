@@ -170,12 +170,13 @@ namespace Client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
-            {
-                panel1.Visible = false;
-            }
-            else
-                panel1.Visible = true;
+            Chat c = new Chat(clientManager);
+            c.ShowDialog();
+        }
+
+        private void txtContent_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

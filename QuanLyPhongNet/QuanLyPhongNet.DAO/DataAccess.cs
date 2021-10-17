@@ -14,7 +14,7 @@ namespace QuanLyPhongNet.DAO
 
         public DataAccess()
         {
-            strConnect = @"Data Source=DESKTOP-05M8TQE;Initial Catalog=QuanLyPhongNet;Integrated Security=True";
+            strConnect = @"Data Source=ROLLER\SQLEXPRESS;Initial Catalog=QuanLyPhongNet;Integrated Security=True";
             //strConnect = QuanLyPhongNet.Common.Properties.Settings.Default.strConnect;
         }
 

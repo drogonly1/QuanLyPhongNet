@@ -47,7 +47,7 @@ namespace Client
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_Chat = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -210,6 +210,7 @@ namespace Client
             this.txtContent.ReadOnly = true;
             this.txtContent.Size = new System.Drawing.Size(252, 207);
             this.txtContent.TabIndex = 12;
+            this.txtContent.TextChanged += new System.EventHandler(this.txtContent_TextChanged);
             // 
             // panel1
             // 
@@ -221,26 +222,26 @@ namespace Client
             this.panel1.Size = new System.Drawing.Size(256, 333);
             this.panel1.TabIndex = 14;
             // 
-            // button2
+            // button_Chat
             // 
-            this.button2.Location = new System.Drawing.Point(10, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 49);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Nhắn tin";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_Chat.Location = new System.Drawing.Point(10, 197);
+            this.button_Chat.Name = "button_Chat";
+            this.button_Chat.Size = new System.Drawing.Size(75, 49);
+            this.button_Chat.TabIndex = 14;
+            this.button_Chat.Text = "Nhắn tin";
+            this.button_Chat.UseVisualStyleBackColor = true;
+            this.button_Chat.Click += new System.EventHandler(this.button2_Click);
             // 
             // Timing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 620);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_Chat);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Timing";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Timing_FormClosing);
@@ -273,7 +274,7 @@ namespace Client
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Chat;
     }
 }
 

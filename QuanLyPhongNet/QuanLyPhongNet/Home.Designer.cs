@@ -32,9 +32,6 @@ namespace QuanLyPhongNet
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.txtMessage = new System.Windows.Forms.TextBox();
-            this.txtContent = new System.Windows.Forms.TextBox();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -51,6 +48,7 @@ namespace QuanLyPhongNet
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timerProgam = new System.Windows.Forms.Timer(this.components);
             this.timerContent = new System.Windows.Forms.Timer(this.components);
+            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drgvClient)).BeginInit();
@@ -71,14 +69,12 @@ namespace QuanLyPhongNet
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(918, 422);
+            this.tabControl1.Size = new System.Drawing.Size(703, 422);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.btnSend);
-            this.tabPage1.Controls.Add(this.txtMessage);
-            this.tabPage1.Controls.Add(this.txtContent);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.btnRefresh);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
@@ -89,43 +85,10 @@ namespace QuanLyPhongNet
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(910, 396);
+            this.tabPage1.Size = new System.Drawing.Size(695, 396);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Máy Trạm";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(689, 344);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(202, 41);
-            this.btnSend.TabIndex = 6;
-            this.btnSend.Text = "Gửi";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
-            // 
-            // txtMessage
-            // 
-            this.txtMessage.BackColor = System.Drawing.Color.White;
-            this.txtMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMessage.Location = new System.Drawing.Point(691, 287);
-            this.txtMessage.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMessage.Multiline = true;
-            this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(200, 42);
-            this.txtMessage.TabIndex = 5;
-            // 
-            // txtContent
-            // 
-            this.txtContent.BackColor = System.Drawing.Color.White;
-            this.txtContent.Location = new System.Drawing.Point(689, 67);
-            this.txtContent.Margin = new System.Windows.Forms.Padding(2);
-            this.txtContent.Multiline = true;
-            this.txtContent.Name = "txtContent";
-            this.txtContent.ReadOnly = true;
-            this.txtContent.Size = new System.Drawing.Size(204, 273);
-            this.txtContent.TabIndex = 4;
             // 
             // btnRefresh
             // 
@@ -193,7 +156,7 @@ namespace QuanLyPhongNet
             this.drgvClient.Name = "drgvClient";
             this.drgvClient.RowHeadersWidth = 51;
             this.drgvClient.RowTemplate.Height = 24;
-            this.drgvClient.Size = new System.Drawing.Size(676, 335);
+            this.drgvClient.Size = new System.Drawing.Size(703, 335);
             this.drgvClient.TabIndex = 0;
             this.drgvClient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.drgvClient_CellClick);
             this.drgvClient.MouseHover += new System.EventHandler(this.drgvClient_MouseHover);
@@ -209,7 +172,7 @@ namespace QuanLyPhongNet
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(912, 396);
+            this.tabPage2.Size = new System.Drawing.Size(910, 396);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tài Khoản";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -276,7 +239,7 @@ namespace QuanLyPhongNet
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(912, 396);
+            this.tabPage3.Size = new System.Drawing.Size(910, 396);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Nhật Ký";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -286,7 +249,7 @@ namespace QuanLyPhongNet
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(912, 396);
+            this.tabPage4.Size = new System.Drawing.Size(910, 396);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Phục Vụ";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -300,13 +263,23 @@ namespace QuanLyPhongNet
             // 
             this.timerContent.Enabled = true;
             this.timerContent.Interval = 1000;
-            this.timerContent.Tick += new System.EventHandler(this.timerContent_Tick);
+            //this.timerContent.Tick += new System.EventHandler(this.timerContent_Tick);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(439, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(64, 43);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Chat";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_2);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 422);
+            this.ClientSize = new System.Drawing.Size(701, 422);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Home";
@@ -314,7 +287,6 @@ namespace QuanLyPhongNet
             this.Load += new System.EventHandler(this.Home_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drgvClient)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.drgvMember)).EndInit();
@@ -341,10 +313,8 @@ namespace QuanLyPhongNet
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnrefesh;
-        private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.TextBox txtMessage;
-        private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Timer timerContent;
+        private System.Windows.Forms.Button button5;
     }
 }
 
